@@ -1,0 +1,9 @@
+[include]
+
+[ignore]
+.*/node_modules/.*
+
+[libs]
+./flow-typed
+
+[options]
