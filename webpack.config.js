@@ -46,7 +46,7 @@ module.exports = [{
         loader: 'babel-loader',
         query: {
           plugins: ['transform-flow-strip-types'],
-          presets: ['es2015', 'es2016', 'react']
+          presets: ['es2015', 'es2016', 'react', 'babel-preset-stage-2']
         },
         exclude: /node_modules/
       }
