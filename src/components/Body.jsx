@@ -1,22 +1,17 @@
 // @flow
 import React from 'react';
 import _ from 'lodash';
+import type { Team } from '../Type';
 
 export default class Body extends React.Component {
   props: {
     head: string,
-    teams: Array<{
-      name: string,
-      place: string
-    }>
+    teams: Array<Team>
   }
 
-  constructTeams = (teams: Array<{
-    name: string,
-    place: string
-  }>) => {
+  constructTeams = (teams: Array<Team>) => {
     let teamElements = [];
-    _.forEach(teams, (team: {name: string, place: string}, i: number) => {
+    _.forEach(teams, (team: Team, i: number) => {
       teamElements.push(
         <li key={i}>
           <p className="name"><b>{team.name}</b></p>
